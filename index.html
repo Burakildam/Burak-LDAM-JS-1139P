@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box-1" id="teamA">
+            <div class="img">
+                <img class="img-a" src="behemoth.jpg" alt="...">
+            </div>
+            <p class="teamscore" id="scoreA">0</p>
+            <h2 class="teamname">BEHEMOTH</h2>
+            <div class="updownbutton">
+                <button onclick="decreaseScore('A')">-</button>
+                <button onclick="increaseScore('A')">+</button>
+            </div>
+            <div class="manuelcontrolsbutton">
+                <button onclick="setScorePrompt('A')">Score Ayarla</button>
+                <button onclick="setNamePrompt('A')">Takım İsmi Gir</button>
+                <button id="resetButtonA">Reset</button>
+            </div>
+        </div>
+        <div class="box-2" id="teamB">
+            <div class="img">
+                <img class="img-b" src="entity.jpg" alt="...">
+            </div>
+            <p class="teamscore" id="scoreB">0</p>
+            <h2 class="teamname">ENTITY</h2>
+            <div class="updownbutton">
+                <button onclick="decreaseScore('B')">-</button>
+                <button onclick="increaseScore('B')">+</button>
+            </div>
+            <div class="manuelcontrolsbutton">
+                <button onclick="setScorePrompt('B')">Score Ayarla</button>
+                <button onclick="setNamePrompt('B')">Takım İsmi Gir</button>
+                <button id="resetButtonB">Reset</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scrript.js"></script>
+</body>
+</html>
